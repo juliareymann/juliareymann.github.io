@@ -82,3 +82,12 @@ blockquote {
 	padding: 25px;
 	font-size: 22px;
 }
+
+.float-left {
+	float: left;
+}
+
+img.float-left {
+	max-width: 100%;
+	margin-right: 2em;
+}

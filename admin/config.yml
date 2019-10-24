@@ -26,6 +26,10 @@ collections:
       - name: "home"
         label: "Home"
         file: "index.md"
+        fields:
+        - {label: "Body", name: "body", widget: "markdown"}
       - name: "about"
         label: "About"
         file: "about.md"
+        fields:
+        - {label: "Body", name: "body", widget: "markdown"}

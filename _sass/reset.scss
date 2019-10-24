@@ -23,3 +23,7 @@ blockquote {
 	color: black;
 	letter-spacing: normal;
 }
+
+figure > img {
+	display: inline-block;
+}

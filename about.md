@@ -5,7 +5,7 @@ permalink: /about/
 nav: about
 ---
 
-<img src="/images/julia-reymann.jpg" alt="Julia Reymann" class="float-left">
+{% include image.html src="/images/julia-reymann.jpg" alt="Julia Reymann" class="float-left" %}
 
 Je m’appelle Julia Reymann et je n’ai jamais été très à l’aise pour parler de moi et raconter mon histoire mais j’aime partager mon expérience et aider les autres.
 

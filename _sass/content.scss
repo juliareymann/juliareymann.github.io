@@ -1,0 +1,45 @@
+figure.float-left {
+	max-width: 100%;
+	margin: 0 2em 1em 0;
+}
+
+figure.float-right {
+	max-width: 100%;
+	margin: 0 0 1em 2em;
+}
+
+figure.center {
+	margin: 1em 0;
+	text-align: center;
+}
+
+blockquote {
+	display: flex; /* so it can wrap with floats */
+	flex-direction: column;
+	border-left: 15px solid $color2;
+	padding: 25px;
+	font-size: 22px;
+}
+
+hr {
+	width: 300px;
+	margin: 3em auto;
+	clear: both;
+}
+
+h1 {
+	color: rgba(255,77,130,1);
+}
+
+h2, h3 {
+	font-weight: 200;
+}
+
+h2:before {
+	content: '# ';
+}
+
+h4 {
+	text-decoration-line: underline;
+	text-decoration-thickness: 1px;
+}

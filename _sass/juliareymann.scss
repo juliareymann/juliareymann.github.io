@@ -1,0 +1,84 @@
+$header-back-cut1: 70%;
+$header-back-cut2: 73%;
+$header-back-cut3: 74%;
+$header-back-cut4: 75%;
+$header-back-cut5: 80%;
+
+.site-title {
+	border: 2px solid black;
+	font-size: 45px;
+	font-weight: 300;
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 40px 20px;
+}
+
+.site-header {
+	height: 400px;
+	background-color: $header-back-color1;
+	background: linear-gradient(
+		180deg,
+		$header-back-color1 0%,
+		$header-back-color1 $header-back-cut1,
+		$header-back-color2 $header-back-cut1,
+		$header-back-color2 $header-back-cut2,
+		$header-back-color1 $header-back-cut2,
+		$header-back-color1 $header-back-cut3,
+		$header-back-color2 $header-back-cut3,
+		$header-back-color2 $header-back-cut4,
+		$header-back-color1 $header-back-cut4,
+		$header-back-color1 $header-back-cut5,
+		white $header-back-cut5,
+		);
+}
+
+.site-nav-wrapper {
+	display: block;
+	background-color: white;
+	height: 200px;
+
+	hr {
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
+.site-catchphrase {
+	font-family: $text-font;
+	font-size: 35px;
+	padding: 20px;
+	text-align: center;
+
+	em {
+		font-style: normal;
+		color: $color1;
+	}
+}
+
+.trigger {
+	display: flex;
+	justify-content: center;
+}
+
+.site-nav .page-link {
+	font-family: $text-font;
+	text-transform: uppercase;
+	color: #D4D4D4;
+	margin: 40px 20px;
+
+	&:hover {
+		color: #606060;
+		text-decoration: none;
+		transition: color .5s linear;
+	}
+
+	&.active {
+		color: $color1;
+	}
+}
+
+blockquote {
+	border-left: 15px solid $color2;
+	padding: 25px;
+	font-size: 22px;
+}

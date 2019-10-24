@@ -1,0 +1,25 @@
+
+
+.site-title {
+	letter-spacing: normal;
+	float: none;
+
+	&,
+  	&:visited {
+    	color: black;
+  	}
+}
+
+.site-header {
+	border: none;
+}
+
+.site-nav {
+	float: none;
+}
+
+blockquote {
+	font-style: normal;
+	color: black;
+	letter-spacing: normal;
+}

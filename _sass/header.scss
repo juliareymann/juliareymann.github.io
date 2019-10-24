@@ -11,6 +11,14 @@ $header-back-cut5: 80%;
 	display: inline-block;
 	padding: 0px 20px;
 	margin: 40px 20px;
+	font-family: $head-font;
+}
+
+.site-title-wrapper {
+  @media screen and (min-width: 1000px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .site-header {

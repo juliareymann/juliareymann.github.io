@@ -4,7 +4,8 @@
 
 @import "fonts";
 @import "colors";
-@import "minima";
-@import "reset";
 @import "content";
-@import "header";
+
+body {
+	padding: 8px;
+}

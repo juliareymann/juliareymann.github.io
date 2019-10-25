@@ -6,9 +6,31 @@
   <title>Content Manager</title>
 </head>
 <body>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <!-- Downgrading to 2.9.1 for https://github.com/netlify/netlify-cms/issues/2421 -->
+  <script src="https://unpkg.com/netlify-cms@2.9.1/dist/netlify-cms.js"></script>
   <script>
     CMS.registerPreviewStyle("/assets/main.css");
+
+    CMS.registerEditorComponent({
+      id: "image",
+      label: "Image",
+      fields: [
+        {name: 'src', label: 'Image', widget: 'image', media_library: {allow_multiple: false}},
+        {name: 'alt', label: 'Alt text', widget: 'string'},
+        {name: 'align', label: 'Alignment', widget: 'select', default: 'center', options: [
+          {label: 'Center', value: 'center'},
+          {label: 'Left', value: 'float-left'},
+          {label: 'Right', value: 'float-right'},
+        ]}
+      ],
+      pattern: /^{% include image.html src="(.*?)" alt="(.*?)" class="([a-z\-]*)" %}$/,
+      fromBlock: match =>
+        match && {src: match[1], alt: match[2], align: match[3]},
+      toBlock: o =>
+        `{% include image.html src="${o.src}" alt="${o.alt.replace(/"/g, '\\"')}" class="${o.align}" %}`,
+      toPreview: ({ alt, src, align }, getAsset) =>
+        `<figure class="${align}"><img src="${getAsset(src)}" alt="${alt}"></figure>`,
+    });
   </script>
 </body>
 </html>

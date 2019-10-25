@@ -6,7 +6,7 @@ backend:
 
 site_url: https://juliareymann.github.io/
 
-media_folder: "images/uploads"
+media_folder: "images"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog

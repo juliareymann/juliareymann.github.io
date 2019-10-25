@@ -1,16 +1,17 @@
 figure.float-left {
-	max-width: 100%;
+	max-width: 50%;
 	margin: 0 2em 1em 0;
 }
 
 figure.float-right {
-	max-width: 100%;
+	max-width: 50%;
 	margin: 0 0 1em 2em;
 }
 
 figure.center {
 	margin: 1em 0;
 	text-align: center;
+	max-width: 100%;
 }
 
 blockquote {

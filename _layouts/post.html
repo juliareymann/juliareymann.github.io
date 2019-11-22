@@ -14,6 +14,11 @@ layout: default
       {% include reading_time.html text=content %}
     </p>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {% if page.last_modified and page.last_modified != page.date %}
+    <p class="post-meta">
+      Mis à jour : {% include date.html date=page.last_modified class="dt-updated" itemprop="dateModified" %}
+    </p>
+    {% endif %}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

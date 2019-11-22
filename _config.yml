@@ -29,3 +29,9 @@ plugins:
   - jekyll-feed
 
 permalink: /post/:title
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      author: "Julia Reymann"

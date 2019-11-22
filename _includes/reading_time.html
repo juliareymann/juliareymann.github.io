@@ -1,0 +1,4 @@
+<span>
+  {% assign words = include.text | number_of_words -%}
+  {% if words < 360 %}1{% else %}{{ words | divided_by:180 }}{% endif %} min de lecture
+</span>

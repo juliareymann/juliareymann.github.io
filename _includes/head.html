@@ -8,5 +8,10 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script>
+  {%- for library in page.libraries -%}
+    <script src="{{site.libraries[library][jekyll.environment]}}" defer></script>
+  {%- endfor -%} 
+  {%- for script in page.scripts -%} 
+    <script src="{{script}}" defer></script>
+  {%- endfor -%}
 </head>

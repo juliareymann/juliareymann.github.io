@@ -21,6 +21,7 @@ url: "https://juliareymann.github.io" # the base hostname & protocol for your si
 facebook_username: julia.reymann
 instagram_username: julia_reymann
 pinterest_username: JuliaReymann
+google_api_key: AIzaSyCSTW_3CbuFg1Oy3pUESNvN4F4oEQEJCOA
 
 # Build settings
 markdown: kramdown
@@ -35,3 +36,12 @@ defaults:
       path: "_posts"
     values:
       author: "Julia Reymann"
+
+# URL of libraries
+libraries:
+  axios:
+    development: https://unpkg.com/axios/dist/axios.js
+    production: https://unpkg.com/axios/dist/axios.min.js    
+  vue:
+    development: https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js
+    production: https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js

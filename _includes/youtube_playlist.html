@@ -1,0 +1,23 @@
+<div id="youtube-playlist-app" v-cloak data-playlist="{{include.playlist_id}}">
+{% raw %}
+  <a href="#">
+    <div class="modal-background" v-if="playingVideoUrl">
+      <div class="video-player">
+        <div class="video-container">
+          <iframe width="560" height="349" v-bind:src="playingVideoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div id="videos" class="video-grid">
+    <div v-for="video in videos" class="video-card">
+      <a v-bind:href="'#'+video.id" class="video-link">
+        <img class="video-thumbnail" v-bind:src="video.thumbnail">
+      </a>
+      <div class="video-info">
+        <h3 v-html="video.title"></h3>
+      </div>
+    </div>
+  </div>
+{% endraw %}
+</div>

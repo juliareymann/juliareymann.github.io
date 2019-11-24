@@ -7,8 +7,14 @@
 }
 
 figure.float-left {
-	max-width: 50%;
+	width: 50%;
 	margin: 0 2em 1em 0;
+	@media screen and (max-width: 500px) {
+		float: none;
+		margin: 1em auto;
+		width: 100%;
+		max-width: 400px;
+	}
 }
 
 figure.float-right {
@@ -17,9 +23,9 @@ figure.float-right {
 }
 
 figure.center {
-	margin: 1em 0;
-	text-align: center;
-	max-width: 100%;
+	margin: 1em auto;
+	width: 100%;
+	max-width: 400px;
 }
 
 figure > img {

@@ -1,6 +1,5 @@
 ---
 title: 'Fourrure : La Norvège dit stop à l''élevage d''animaux à fourrure d''ici 2025'
-date: 2019-11-22T17:11:44.640Z
 ---
 ### Ce qu’il faut savoir :
 

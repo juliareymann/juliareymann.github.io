@@ -1,6 +1,9 @@
 ---
 title: 'Fourrure : La Norvège dit stop à l''élevage d''animaux à fourrure d''ici 2025'
+date: 2019-04-11
+last_modified: 2019-04-24
 ---
+
 ### Ce qu’il faut savoir :
 
 Les pays nordiques sont parmi les principaux fournisseurs de fourrure dans le monde :\

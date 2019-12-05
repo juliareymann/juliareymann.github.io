@@ -1,6 +1,7 @@
 ---
-layout: post
 title:  "Les 6 raisons pour lesquelles je commence un blog à l'heure d'Instagram"
+date: 2019-04-02
+last_modified: 2019-04-17
 ---
 
 {% include image.html src="/images/pour-chaque-fin-il-y-a-toujours-un-nouveau-depart.jpg" alt="Pour chaque fin il a toujours un nouveau depart" class="float-left" %}

@@ -4,14 +4,14 @@
     {
       "label": "serve",
       "type": "shell",
-      "command": "bundler exec jekyll serve --future",
+      "command": "bundler exec jekyll serve --future --livereload",
       "isBackground": true,
       "problemMatcher": ["$jekyll-error-watch", "$jekyll-warning-watch"]
     },
     {
       "label": "serve --incremental",
       "type": "shell",
-      "command": "bundler exec jekyll serve --incremental --future",
+      "command": "bundler exec jekyll serve --incremental --future --livereload",
       "isBackground": true,
       "problemMatcher": ["$jekyll-error-watch", "$jekyll-warning-watch"]
     }

@@ -60,8 +60,9 @@ h3 {
   font-weight: 200;
 }
 
-h2:before {
-  content: "# ";
+h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 h4 {
